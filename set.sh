@@ -2,7 +2,7 @@
 
 # install prerequisites
 sudo apt-get update
-sudo apt-get install -y gcc g++ curl vim zsh neofetch
+sudo apt-get install -y gcc g++ curl vim zsh neofetch git
 
 # change shell
 chsh -s 'which zsh'

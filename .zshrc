@@ -4,8 +4,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-export CC=/usr/bin/gcc-11
-export GXX=/usr/bin/g++-11
+export CC=/usr/bin/gcc
+export GXX=/usr/bin/g++
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -104,7 +104,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #export PATH=/opt/pm883-1/kihwan/mysql-8.0.27/build/lib:$PATH
-export PATH=/opt/pm883-1/kihwan/llvm-14.x/bin:$PATH
 
 neofetch
 
@@ -112,9 +111,6 @@ alias makeCscopeFiles="find ./ \( -path ./test -prune -o -path ./sql-common -pru
 
 alias ssd="cd /opt/pm883-1/kihwan"
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/pm883-1/kihwan/chbenchmark/mysql/HammerDB-4.3/lib:/opt/pm883-1/kihwan/mysql-8.0.27/build/lib:/opt/p3608-1/kihwan/diva_postgres/postgres/src/interfaces/libpq
-
-# liburing
-export LD_PRELOAD=/usr/lib/liburing.so
 
 # jemalloc
 # export LD_PRELOAD=/usr/local/lib/libjemalloc.so
@@ -127,9 +123,6 @@ export PGHOST=localhost
 
 # for using schemecolor in tmux
 export TERM=screen-256color
-
-# clang
-export CLANG=/usr/bin/clang
 
 # prompt
 export PROMPT="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
